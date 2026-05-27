@@ -1,5 +1,4 @@
 
-
 # ShinyHunter-AutoCapture - 洛克王国S2赛季异色精灵自动捕捉系统
 
 > 🎯 基于深度学习的视觉自动化捕捉工具 | 专为《洛克王国：世界》S2赛季设计  
@@ -53,7 +52,7 @@
 
 ## 📸 使用效果预览
 
-
+![运行截图](pic/p1.png)
 
 > 上图为本脚本在游戏中自动识别并捕捉异色精灵的实际效果。
 
@@ -98,11 +97,14 @@ git clone https://github.com/你的用户名/ShinyHunter-AutoCapture.git
 pip install -r requirements.txt
 ```
 
-### 4. 下载预训练权重
+### 4. 权重文件自动下载
 
-将权重文件放入 `weights/` 目录（由于文件较大，请从Release页面下载）：
-- `s2_all_sprites.pt`
-- `shiny_classifier.pth`
+**无需手动下载权重**！首次运行 `main.py` 时，脚本会自动从 GitHub Release 下载预训练模型到 `weights/` 目录：
+
+- `s2_all_sprites.pt` (YOLOv8 检测权重)
+- `shiny_classifier.pth` (异色分类器权重)
+
+下载进度会在控制台显示，请保持网络通畅。若自动下载失败，可手动从 [Releases](https://github.com/ace-trump-tech/RocoKingdom_AutoCapture/releases) 页面下载并放入 `weights/` 文件夹。
 
 ### 5. 配置文件调整
 
@@ -172,7 +174,7 @@ python main.py
 | 脚本启动后没反应 | 检查游戏是否**窗口化**；按F2后再点一下游戏窗口确保焦点。 |
 | 精灵识别率低 | 降低 `config.yaml` 中的 `conf_threshold`（例如从0.6降到0.5）。 |
 | 鼠标乱飘 | 确保游戏分辨率为1920×1080，且UI缩放为100%。 |
-| 提示“模型文件不存在” | 确认权重文件已放入 `weights/` 目录，文件名与配置一致。 |
+| 提示“模型文件不存在” | 首次运行会自动下载；若网络问题下载失败，请手动从Releases下载。 |
 
 ---
 
@@ -212,4 +214,3 @@ python main.py
 
 **项目地址**：`https://github.com/ace-trump-tech/RocoKingdom_AutoCapture/tree/main`  
 **最后更新**：2026-05-27 | 适配S2赛季
-
