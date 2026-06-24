@@ -123,7 +123,7 @@ pyenv local 3.10.11
 ### 2. 下载项目（已完成上述三步）
 
 ### 3. 安装依赖
-###在解压文件夹里requirements.txt中 dxcam==0.0.5.3 改成 dxcam==0.0.5 然后运行
+### 在解压文件夹里requirements.txt中 dxcam==0.0.5.3 改成 dxcam==0.0.5 然后运行
 
 ```bash
 pip install -r requirements.txt
