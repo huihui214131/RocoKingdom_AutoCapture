@@ -83,23 +83,23 @@ git clone https://github.com/你的用户名/ShinyHunter-AutoCapture.git
 
 ## 🚀 安装与使用
 
-###有些简单的作者有些没写，我来补上
-###必要python 3.10
-###你电脑中如果存在高版本的python用以下代码
+## 有些简单的作者有些没写，我来补上
+### 必要python 3.10
+### 你电脑中如果存在高版本的python用以下代码
 
 ```bash
 Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
 ```
 
-###重启终端或电脑
+### 重启终端或电脑
 
-###验证
+### 验证
 ```bash
 
 pyenv --version
 ```
 
-###安装
+### 安装
 
 ```bash
 #安装
