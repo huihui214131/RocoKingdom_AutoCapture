@@ -83,6 +83,37 @@ git clone https://github.com/你的用户名/ShinyHunter-AutoCapture.git
 
 ## 🚀 安装与使用
 
+###有些简单的作者有些没写，我来补上
+###必要python 3.10
+###你电脑中如果存在高版本的python用以下代码
+
+```bash
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+```
+
+###重启终端或电脑
+
+###验证
+```bash
+
+pyenv --version
+```
+
+###安装
+
+```bash
+#安装
+pyenv install 3.10.11
+#使用
+pyenv global 3.10.11
+```
+
+```bash
+#临时使用
+cd <你解压的文件夹位置>
+pyenv local 3.10.11
+```
+
 ### 1. 环境准备
 
 - 操作系统：Windows 10/11（推荐）
@@ -92,6 +123,7 @@ git clone https://github.com/你的用户名/ShinyHunter-AutoCapture.git
 ### 2. 下载项目（已完成上述三步）
 
 ### 3. 安装依赖
+###在解压文件夹里requirements.txt中 dxcam==0.0.5.3 改成 dxcam==0.0.5 然后运行
 
 ```bash
 pip install -r requirements.txt
