@@ -136,7 +136,7 @@ pip install -r requirements.txt
 - `s2_all_sprites.pt` (YOLOv8 检测权重)
 - `shiny_classifier.pth` (异色分类器权重)
 
-下载进度会在控制台显示，请保持网络通畅。若自动下载失败，可手动从 [Releases](https://github.com/ace-trump-tech/RocoKingdom_AutoCapture/releases) 页面下载并放入 `weights/` 文件夹。
+下载进度会在控制台显示，请保持网络通畅。若自动下载失败，可手动从 [Releases](https://github.com/ultralytics/assets/releases) 页面下载并放入 `weights/` 文件夹。
 
 ### 5. 配置文件调整
 
